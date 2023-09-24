@@ -5,25 +5,25 @@ The Bomb Party Script Word Finder is a JavaScript tool that assists players in t
 To use this script during a Bomb Party game:
 
 Start a game of Bomb Party and ensure it has begun.
-![image](https://github.com/Lyro4634/BombPartyWordFinder/assets/77943696/f5b8296c-59fc-4534-b8ea-b4c4050b9fdf)
+![image](https://github.com/Lyro4634/BombPartyWordFinder/assets/77943696/6d22147d-cdee-4e80-bf05-59dc0142407a)
 
 Open the browser's developer console (usually by pressing F12 or Ctrl+Shift+I).
-![image](https://github.com/Lyro4634/BombPartyWordFinder/assets/77943696/4f082f74-611f-4547-a4f3-7659303ed0a8)
+![image](https://github.com/Lyro4634/BombPartyWordFinder/assets/77943696/47b51a34-eba4-4a47-934b-8dce9049d9c5)
 
-Click the "Find Element" button on the top left of the game interface. This button allows the script to identify the letter elements on the screen.
-![image](https://github.com/Lyro4634/BombPartyWordFinder/assets/77943696/f4361a6f-f0a2-4a87-9ea2-f433ba7cb8f3)
+Click the "Find Element" button on the top left of the browser's developer console. This button allows the script to identify the letter elements on the screen.
+![image](https://github.com/Lyro4634/BombPartyWordFinder/assets/77943696/832ea9f4-4af0-41b0-b4f4-19711092d01f)
 
 Click on the letters within the bomb to select the syllable class.
-![image](https://github.com/Lyro4634/BombPartyWordFinder/assets/77943696/3c6f901a-ba6e-4439-ad84-b355773eaa27)
+![image](https://github.com/Lyro4634/BombPartyWordFinder/assets/77943696/b41f1e6d-1412-4b3b-b6d8-1598d35d46d6)
 
 Go to the console tab on the top of the browser's developer console.
-![image](https://github.com/Lyro4634/BombPartyWordFinder/assets/77943696/b2feb7b5-79b0-4f2b-856f-2a41be0ba733)
+![image](https://github.com/Lyro4634/BombPartyWordFinder/assets/77943696/1b46ad36-7bb1-41d6-9495-4b1fe0294377)
 
 Copy and paste the contents of [paste.js](https://github.com/Lyro4634/BombPartyWordFinder/blob/main/paste.js) into the console and press Enter.
-![image](https://github.com/Lyro4634/BombPartyWordFinder/assets/77943696/035644da-fd73-47dc-b0e7-31e9cd291c27)
+![image](https://github.com/Lyro4634/BombPartyWordFinder/assets/77943696/8fab7683-77a0-48f6-9119-36b9f4942675)
 
 The script will analyze the selected letters and generate a 3 valid words.
-![image](https://github.com/Lyro4634/BombPartyWordFinder/assets/77943696/49bc0d2e-0a0b-4792-a437-98923344c27e)
+![image](https://github.com/Lyro4634/BombPartyWordFinder/assets/77943696/2fbfbf3f-314c-4727-b549-c428de8aeb49)
 
 You can then type any word and it will regenerate for each time the letters inside the bomb changes.
 
