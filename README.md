@@ -28,7 +28,7 @@ The script will analyze the selected letters and generate a 3 valid words.
 You can then type any word and it will regenerate for each time the letters inside the bomb changes.
 
 # Disclaimer
-This script is intended solely for educational use during Bomb Party gameplay. It is not licensed, and contributions are not welcome.
+This script is intended solely for educational use during Bomb Party gameplay. It is not licensed, and contributions are welcome (no griefing).
 
 Please use this tool responsibly, follow the rules of the game, and respect the integrity of gameplay. Use of this script in any other context or for any other purpose is discouraged.
 
