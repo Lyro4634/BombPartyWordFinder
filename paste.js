@@ -5,34 +5,27 @@ function shuffleArray(array) {
   }
 }
 
-function fetchDataAndProcess() {
-  var url = 'https://raw.githubusercontent.com/DO-Ui/bombparty-bot/master/wordlist.txt';
-  let text = document.querySelector('.syllable').textContent;
-  let final = "";
-  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
-  fetch(url)
-    .then(response => response.text())
-    .then(html => {
-      var tempElement = document.createElement("div");
-      tempElement.innerHTML = html;
-      var extractedText = tempElement.textContent.split("\n");
-      shuffleArray(extractedText);
-      extractedText.sort((a, b) => a.length - b.length);
-
-      extractedText.forEach(item => {
-        if (item.includes(text) && final.split('\n').length < 4) {
-          final += "\n" + item;
-        }
-      });
-
-      console.log(final);
-    })
-    .catch(error => {
-      console.error("Error fetching the URL:", error);
-    });
+async function fetchDataAndProcess() {
+  try {
+    const url = 'https://raw.githubusercontent.com/DO-Ui/bombparty-bot/master/wordlist.txt';
+    const response = await fetch(url);
+    const text = document.querySelector('.syllable').textContent;
+    const html = await response.text();
+    const tempElement = document.createElement("div");
+    tempElement.innerHTML = html;
+    const extractedText = tempElement.textContent.split("\n");
+    shuffleArray(extractedText);
+    extractedText.sort((a, b) => a.length - b.length);
+    const final = extractedText.filter(item => item.includes(text)).slice(0, 4).join("\n");
+    console.log(final);
+  } catch (error) {
+    console.error("Error fetching the URL:", error);
+  }
 }
 
 fetchDataAndProcess();
+
+const targetNode = document.querySelector('.syllable');
 
 function handleTextChange(mutationsList) {
   for (const mutation of mutationsList) {
@@ -43,6 +36,5 @@ function handleTextChange(mutationsList) {
 }
 
 const observer = new MutationObserver(handleTextChange);
-const targetNode = document.querySelector('.syllable');
 const config = { characterData: true, childList: true, subtree: true };
 observer.observe(targetNode, config);
